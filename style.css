@@ -303,6 +303,7 @@ a:hover {
 
 .navbar-brand img {
   max-height: 200px;
+  width: auto;
   margin: 0 5px 0 0;
   display: inline;
 }
@@ -509,6 +510,7 @@ button {
 .form-control {
   border-color: rgba(0, 0, 0, 0.1);
   box-shadow: none;
+  height: 30px;
 }
 
 .scrollToTop {
@@ -1024,6 +1026,7 @@ h4 {
     line-height: 50px;
     font-size: 20px;
   }
+
   .close-lightbox {
     display: inline-block;
   }
@@ -1054,11 +1057,14 @@ img {
     text-align: center;
   }
 }
-/* 
+div.form-group {
+  line-height: 40px;
+}
+
 .image-resize-mode {
   height: auto;
 }
 .img-responsive {
   height: auto;
   width: 100%;
-} */
+}
