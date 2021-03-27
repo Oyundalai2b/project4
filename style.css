@@ -6,7 +6,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+form {
+  line-height: 30px;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.form-control {
+  margin-left: 20px;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+  height: 20px;
+  border-radius: 5px;
+}
+#message {
+  height: 100px;
+  margin-left: 0;
+}
+.col-sm-6.address p {
+  margin-left: 10px;
+}
 a,
 button {
   transition: all 0.3s ease-in-out;
@@ -364,6 +382,13 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  div.row ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 16px;
+  }
   .site-navigation {
     position: absolute;
     top: 50%;
@@ -505,12 +530,6 @@ button {
 
 .panel-rd .panel-footer {
   border-radius: 0 0 29px 29px;
-}
-
-.form-control {
-  border-color: rgba(0, 0, 0, 0.1);
-  box-shadow: none;
-  height: 30px;
 }
 
 .scrollToTop {
@@ -785,7 +804,7 @@ h4 {
 }
 
 .tc-white {
-  color: #364577 !important;
+  color: #ffffff !important;
 }
 
 .btn-atomic-tangerine {
@@ -1019,12 +1038,6 @@ h4 {
   }
   .voffset-lg {
     margin-top: 30px;
-  }
-
-  form {
-    padding: 5px;
-    line-height: 50px;
-    font-size: 20px;
   }
 
   .close-lightbox {
