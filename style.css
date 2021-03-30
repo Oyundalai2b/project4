@@ -13,7 +13,7 @@ form {
 }
 .form-control {
   margin-left: 20px;
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: #0000ff;
   box-shadow: none;
   height: 20px;
   border-radius: 5px;
@@ -25,6 +25,7 @@ form {
 .col-sm-6.address p {
   margin-left: 10px;
 }
+
 a,
 button {
   transition: all 0.3s ease-in-out;
@@ -813,13 +814,13 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-  background: #f3976c;
+  background: #364577;
   color: #ffffff !important;
 }
 
 .btn-atomic-tangerine:hover {
-  background: #c27956 !important;
-  color: #ffffff !important;
+  background: #4a86e8 !important;
+  color: #ffffff !important ;
 }
 
 .ltc-white {
@@ -831,11 +832,12 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-  color: #f3976c !important;
+  color: #4a86e8 !important;
+  font-weight: 500 !important;
 }
 
 .ltc-atomic-tangerine:hover {
-  color: #c27956 !important;
+  color: #4a86e8 !important;
 }
 
 .icon-dark-slate-blue {
