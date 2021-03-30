@@ -676,7 +676,12 @@ a {
   font-weight: 400;
   color: #575757 !important;
 }
-
+ul.txt-white li a {
+  color: #ffffff !important;
+}
+div.row-footer {
+  margin-left: 15px;
+}
 .container {
   max-width: 1000px;
 }
