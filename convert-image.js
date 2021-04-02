@@ -11,10 +11,12 @@ Jimp.decoders["image/jpeg"] = (data) => {
 const directory = "./img";
 
 const x500_500 = ["2.jpg", "3.jpg", "4.bmp", "11.jpg"];
+const xm200_200 = ["2.jpg", "3.jpg", "4.bmp", "11.jpg"];
 
 const x200_200 = ["atlanta web designer mike.png"];
 
 const w1920 = ["atlanta made sign orange.jpg", "atlanta made sign.jpg"];
+const w480 = ["atlanta made sign orange.jpg", "atlanta made sign.jpg"];
 
 x200_200.forEach((fileName) => {
   Jimp.read(`${directory}/${fileName}`, (err, file) => {
@@ -35,6 +37,15 @@ w1920.forEach((fileName) => {
       .write(`${directory}/w1920-${fileName}`); // save
   });
 });
+w480.forEach((fileName) => {
+  Jimp.read(`${directory}/${fileName}`, (err, file) => {
+    if (err) throw err;
+    file
+      .resize(480, Jimp.AUTO) // resize with auto height
+      .quality(60) // set JPEG quality
+      .write(`${directory}/w480-${fileName}`); // save
+  });
+});
 
 x500_500.forEach((fileName) => {
   Jimp.read(`${directory}/${fileName}`, (err, file) => {
@@ -44,5 +55,15 @@ x500_500.forEach((fileName) => {
       .quality(60) // set JPEG quality
       // .greyscale() // set greyscale
       .write(`${directory}/500x500-${fileName}`); // save
+  });
+});
+xm200_200.forEach((fileName) => {
+  Jimp.read(`${directory}/${fileName}`, (err, file) => {
+    if (err) throw err;
+    file
+      .resize(200, 200) // resize
+      .quality(60) // set JPEG quality
+      // .greyscale() // set greyscale
+      .write(`${directory}/200x200-${fileName}`); // save
   });
 });
