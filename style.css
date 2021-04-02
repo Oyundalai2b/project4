@@ -36,6 +36,22 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+h2 {
+  font-size: 30px !important ;
+}
+h3 {
+  font-size: 22px !important ;
+}
+p {
+  font-size: 14px !important ;
+}
+
+p.text-center.quote {
+  font-size: 14px !important ;
+}
+p.quoteName {
+  font-size: 16px !important;
+}
 
 #page-loading-blocs-notifaction {
   position: fixed;
@@ -854,11 +870,11 @@ h4 {
 }
 
 .bg-atlanta-20made-20sign {
-  background-image: url("img/atlanta%20made%20sign%20min.jpg");
+  background-image: url("img/w1920-atlanta%20made%20sign.jpg");
 }
 
 .bg-atlanta-20made-20sign-20orange {
-  background-image: url("img/atlanta%20made%20sign%20orange%20min.jpg");
+  background-image: url("img/w1920-atlanta%20made%20sign%20orange.jpg");
 }
 
 @media (max-width: 1024px) {
